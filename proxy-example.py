@@ -3,13 +3,12 @@
 
 import urllib2
 
-// Our gateway’s hosthname + port, check your dashboard for full gateways list
+# Our gateway’s hosthname + port, check your dashboard for full gateways list
 gs_proxy_addr = ‘gw1.geosurf.io:8081’
 
-proxy = urllib2.ProxyHandler({
-‘http’: gs_proxy_addr,
-‘https’: gs_proxy_addr
-})
+proxy = urllib2.ProxyHandler({‘http’: gs_proxy_addr,
+                              ‘https’: gs_proxy_addr})
+
 opener = urllib2.build_opener(proxy)
 urllib2.install_opener(opener)
 
