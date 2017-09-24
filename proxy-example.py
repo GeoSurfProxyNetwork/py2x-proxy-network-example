@@ -1,5 +1,5 @@
 # Python 2 proxy example
-# http://www.geosurf.com/resources/residential-ips-integration-guide
+# https://www.geosurf.com/resources/residential-ips-integration-guide
 
 import urllib2
 
